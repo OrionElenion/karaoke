@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous" />
+		<link rel="stylesheet" href="index.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script type="text/javascript">
 //<![CDATA[
@@ -27,7 +27,7 @@ function loadQueryParameters () {
 			<h1>Karaoké</h1>
 		</header>
 		<main>
-			<form class="pure-form pure-form-stacked" action="https://automation.orion-elenion.net/webhook/karaoke/wish" method="post">
+			<form action="https://automation.orion-elenion.net/webhook/karaoke/wish" method="post">
 				<fieldset>
 					<input type="hidden" name="table" id="table" required="" />
 					<input type="hidden" name="seat" id="seat" required="" />
@@ -39,8 +39,8 @@ function loadQueryParameters () {
 					<textarea name="notes" id="notes" type="text"></textarea>
 				</fieldset>
 				<fieldset>
-					<button type="submit" class="pure-button pure-button-primary">Valider</button>
-					<button type="cancel" class="pure-button">Annuler</button>
+					<button type="submit">Valider</button>
+					<button type="cancel">Annuler</button>
 				</fieldset>
 			</form>
 		</main>
