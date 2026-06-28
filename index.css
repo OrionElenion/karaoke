@@ -1,8 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
+	width: 100%;
 }
 
 body {
-	margin: 1em;
+	margin: 0;
+	padding: 1em;
 	text-align: center;
 }
 
@@ -12,13 +19,21 @@ h1 {
 }
 
 form {
+	display: block;
+	width: 100%;
+	padding: 0;
 	text-align: left;
-	display: inline-block;
-	max-width: 10em;
 }
 
 fieldset {
 	border: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	height: 2em;
 }
 
 label, input {
@@ -27,6 +42,17 @@ label, input {
 
 input, textarea {
 	margin-bottom: 1em;
+	width: 94%;
+	padding: 3%;
+}
+
+textarea {
+	font-family: sans-serif;
+	font-size: small;
+}
+
+fieldset.buttons {
+	text-align: center;
 }
 
 label:has(+ *[required])::after {
@@ -34,4 +60,20 @@ label:has(+ *[required])::after {
 	color: red;
 	vertical-align: super;
 	font-size: smaller;
+}
+
+button {
+	margin: 1ex;
+	padding: 1em;
+	border-width: thin;
+	border-radius: 1ex;
+	border-style: solid;
+}
+
+button[type="submit"] {
+	background-color: lightgreen;
+}
+
+button[type="cancel"] {
+	background-color: pink;
 }
